@@ -10,6 +10,7 @@ set cpo&vim
 let s:source = {
 \   'max_candidates': 30,
 \   'is_volatile' : 1,
+\   'default_action' : {'*' : 'split'},
 \ }
 
 function! s:source.gather_candidates(args, context)
